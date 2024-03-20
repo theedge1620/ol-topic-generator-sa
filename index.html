@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Online Exam Outline Generator</title>
+    <link rel="icon" type="image/x-icon" href="./static/img/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <script type ="module" src="site-flags.js"></script>
+    <script type ="module" src="bwr-ka-catalog.js"></script>
+    <script type ="module" src="pwr-ka-catalog.js"></script>
+ 
+</head>
+
+<body>
+    <header>Welcome to the online exam outline generator.</header>
+
+    <main>
+        <p>This application creates exam outlines for PWRs and BWRs in reasonable conformance with NUREG-1021, NUREG-1122, Revision 3 and NUREG-1123, Revision 3.</p>
+        <p>The user is responsible for verifying that the output conforms with NUREG-1021, NUREG-1122, Revision 3 and NUREG-1123, Revision 3.</p>
+
+        <p>Input parameters below and click on "Generate" to select exam topics.</p>
+    
+        <article>
+            <label for="siteSelector">Site: </label>
+
+            <select id="siteSelector">
+                <option value="1">ANO 1</option>
+                <option value="2">ANO 2
+                <option value="3">Beaver Valley 1
+                <option value="4">Beaver Valley 2
+                <option value="5">Braidwood
+                <option value="6">Browns Ferry
+                <option value="7">Brunswick
+                <option value="8">Byron
+                <option value="9">Callaway
+                <option value="10">Calvert Cliffs
+                <option value="11">Catawba
+                <option value="12">Clinton
+                <option value="13">Columbia Generating Station
+                <option value="14">Comanche Peak
+                <option value="15">Cooper
+                <option value="16">D.C. Cook
+                <option value="17">Davis-Besse
+                <option value="18">Diablo Canyon
+                <option value="19">Dresden
+                <option value="20">Farley
+                <option value="21">Fermi
+                <option value="22">FitzPatrick
+                <option value="23">Ginna
+                <option value="24">Grand Gulf
+                <option value="25">Hatch
+                <option value="26">Hope Creek
+                <option value="27">Indian Point
+                <option value="28">La Salle
+                <option value="29">Limerick
+                <option value="30">McGuire
+                <option value="31">Millstone 2
+                <option value="32">Millstone 3
+                <option value="33">Monticello
+                <option value="34">Nine Mile Point 1
+                <option value="35">Nine Mile Point 2
+                <option value="36">North Anna
+                <option value="37">Oconee
+                <option value="38">Palisades
+                <option value="39">Palo Verde
+                <option value="40">Peach Bottom
+                <option value="41">Perry
+                <option value="42">Point Beach
+                <option value="43">Prairie Island
+                <option value="44">Quad Cities
+                <option value="45">River Bend
+                <option value="46">Robinson
+                <option value="47">Saint Lucie
+                <option value="48">Salem
+                <option value="49">Seabrook
+                <option value="50">Sequoyah
+                <option value="51">Shearon Harris
+                <option value="52">South Texas
+                <option value="53">Summer
+                <option value="54">Surry
+                <option value="55">Susquehanna
+                <option value="56">Three Mile Island
+                <option value="57">Turkey Point
+                <option value="58">Vogtle
+                <option value="59">Waterford
+                <option value="60">Watts Bar
+                <option value="61">Wolf Creek
+            </select>
+
+        </article>
+        <article>
+            <label for="examDate">Exam Date: </label>   
+            <input type="date" id="examDate" name="examDateSelector">
+            
+        </article>
+
+        <article>
+            <label for="randomTopics"> Randomize Topics? (check for yes):</label>
+            <input type="checkbox" id="randomTopics" name="randomizeTopics" value="Randomize Topics">
+            
+        </article>
+
+        <button id="submitButton"> Generate Exam Topics</button>
+
+        
+        <script type="module" src="./index.js"></script>
+
+        
+
+    </main>
+   
+
+</body>
+</html>
